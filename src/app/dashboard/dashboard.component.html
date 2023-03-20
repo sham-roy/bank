@@ -1,0 +1,53 @@
+<h1 class="text-center mt-4 text-light">Welcome {{user}} </h1>
+
+
+<div  style="" class="container">
+
+</div>
+<div class="row">
+        
+<div class="card col" id="deposit">
+    <div class="card-header">
+      <div class="text-header">Deposit</div>
+    </div>
+    <div class="card-body">
+      <form action="#">
+        <div class="form-group">
+          <label for="acno">Account Number</label>
+          <input  [(ngModel)]="acno" required="" class="form-control" name="acno" id="acno" type="text">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input [(ngModel)]="psw" required="" class="form-control" name="psw" id="password" type="password">
+          </div>
+        <div class="form-group">
+          <label for="amt">Amount:</label>
+          <input [(ngModel)]="amt" required="" class="form-control" name="amt" id="amt" type="text">
+        </div>
+       <input (click)="deposit()" type="submit" class="btn" value="Deposit"> </form>
+    </div>
+  </div>
+
+            
+<div class="card col" id="deposit">
+    <div class="card-header">
+      <div class="text-header">Withdraw</div>
+    </div>
+    <div class="card-body">
+      <form action="#">
+        <div class="form-group">
+          <label for="acno">Account Number</label>
+          <input  [(ngModel)]="acno1" required="" class="form-control" name="acno" id="acno" type="text">
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input [(ngModel)]="psw1" required="" class="form-control" name="psw" id="password" type="password">
+          </div>
+        <div class="form-group">
+          <label for="amt">Amount:</label>
+          <input [(ngModel)]="amt1" required="" class="form-control" name="amt" id="amt" type="text">
+        </div>
+       <input (click)="withdraw()" type="submit" class="btn" value="withdraw"> </form>
+    </div>
+  </div>      
+</div>

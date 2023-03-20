@@ -1,0 +1,23 @@
+
+<div class="card">
+    <div class="card-header">
+      <div class="text-header">Register</div>
+    </div>
+    <div class="card-body">
+      <form action="#">
+        <div class="form-group">
+          <label for="username">Account Number</label>
+          <input [(ngModel)]="acno" required="" class="form-control" name="acno" id="acno" type="text">
+        </div>
+        <div class="form-group">
+            <label for="username">Username:</label>
+            <input [(ngModel)]="uname" required="" class="form-control" name="username" id="username" type="text">
+          </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input [(ngModel)]="psw" required="" class="form-control" name="password" id="password" type="password">
+        </div>
+       <input (click)="register()" type="submit" class="btn" value="submit"> </form>
+    </div>
+  </div>
+  
