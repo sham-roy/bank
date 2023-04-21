@@ -24,11 +24,13 @@ export class ServiceFileService {
       return true
     }
   }
-  login(acno:any,psw:any){
+
+
+  logins(acno1:any,psw1:any){
     var userDetails=this.userDetails
-    if(acno in userDetails){
-      if(psw==userDetails[acno]["password"]){
-        this.currentUser=userDetails[acno]["username"]
+    if(acno1 in userDetails){
+      if(psw1==userDetails[acno1]["password"]){
+        this.currentUser=userDetails[acno1]["username"]
         return true
       }
       else{

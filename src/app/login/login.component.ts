@@ -24,7 +24,7 @@ export class LoginComponent {
   login(){
     var acnum=this.acno
     var psw=this.psw
-    const result=this.services.login(acnum,psw)
+    const result=this.services.logins(acnum,psw)
     // alert('login succesful')
     if(result){
       alert('login success')
